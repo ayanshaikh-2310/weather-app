@@ -1,0 +1,74 @@
+/* 
+.mainContainer{
+    text-align: center;
+}
+
+.cardContainer{
+display: flex;
+justify-content: center;
+
+}
+
+.cardContainer .Card{
+width: 50%
+} */
+
+/* ======= Main container ======= */
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ======= Card styling ======= */
+.Card {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.Card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ======= Typography inside card ======= */
+.Card p {
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+  .cardContainer {
+    padding: 10px;
+  }
+
+  .Card {
+    max-width: 90%;
+  }
+
+  .Card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Card {
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  .Card p {
+    font-size: 0.85rem;
+  }
+
+  .Card h5 {
+    font-size: 1.1rem;
+  }
+}
