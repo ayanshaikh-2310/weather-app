@@ -42,12 +42,12 @@ function InfoBox({info}) {
           
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }} component={"span"} >
-          <p>Tempreature {info.temp}&deg;C</p>
-          <p>Humidity {info.humidity}</p>
-          <p>Presure {info.pressure}</p>
-          <p>Max Tempreture {info.temp_max}</p>
-          <p>Min Tempreture {info.temp_min}</p>
-          <p>The weather <i>{info.weather}</i> feelslike {info.feels_like}</p>
+          <p>Temperature: {info.temp}&deg;C</p>
+          <p>Humidity: {info.humidity}</p>
+          <p>Pressure: {info.pressure}</p>
+          <p>Max Temperature: {info.temp_max}</p>
+          <p>Min Temperature: {info.temp_min}</p>
+          <p>The weather <i>{info.weather}</i> feels like {info.feels_like}</p>
         </Typography>
       </CardContent>
      
